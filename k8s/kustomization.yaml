@@ -4,7 +4,7 @@ resources:
   - deployment.yaml
   - service.yaml
   - route.yaml
-images:
-  - name: parksmap-web/image
-    newName: image-registry.openshift-image-registry.svc:5000/aussie-project/parksmap-web
+# images:
+#   - name: parksmap-web/image
+#     newName: image-registry.openshift-image-registry.svc:5000/aussie-project/parksmap-web
 #     newTag: 464cfd7f59f1912afb0c6fe556201dfb9a9f9909
