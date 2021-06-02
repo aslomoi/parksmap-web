@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    description: Route for application's http service.
+    argocd.argoproj.io/sync-options: Validate=false
+  labels:
+    application: parksmap-web
+  name: parksmap-web
+spec:
+  to:
+    name: parksmap-web
+    kind: Service
+  tls:
+    termination: edge

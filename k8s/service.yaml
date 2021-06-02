@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    description: The application's http port.
+  labels:
+    application: parksmap-web
+  name: parksmap-web
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: parksmap-web
