@@ -6,6 +6,10 @@ metadata:
     argocd.argoproj.io/sync-options: Validate=false
   labels:
     application: parksmap-web
+    app: workshop
+    component: parksmap-web
+    role: frontend
+    app.kubernetes.io/name: spring
   name: parksmap-web
 spec:
   to:
